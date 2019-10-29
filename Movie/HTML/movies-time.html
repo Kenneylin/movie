@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../CSS/movies-time.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="plist" cellspacing="0">
+        <thead class="upbox">
+            <tr>
+                <th>放映时间</th>
+                <th>语言版本</th>
+                <th>放映厅</th>
+                <th>售价（元）</th>
+                <th>选座购票</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="even">
+                <td>
+                    <span class="begin-time">09:10</span>
+                    <br>
+                    <span class="end-time">11:25散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont"></span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=9.10"><button>选座购票</button></a>
+                </td>
+            </tr>
+            <tr class="">
+                <td>
+                    <span class="begin-time">11:45</span>
+                    <br>
+                    <span class="end-time">14:00散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont"></span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=11:45"><button>选座购票</button></a>
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <span class="begin-time">14:20</span>
+                    <br>
+                    <span class="end-time">16:35散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont">.</span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=14:20"><button>选座购票</button></a>
+                </td>
+            </tr>
+            <tr class="">
+                <td>
+                    <span class="begin-time">16:55</span>
+                    <br>
+                    <span class="end-time">19:10散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont">.</span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=16:55"><button>选座购票</button></a>
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <span class="begin-time">19:30</span>
+                    <br>
+                    <span class="end-time">21:45散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont">.</span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=19:30"><button>选座购票</button></a>
+                </td>
+            </tr>
+            <tr class="">
+                <td>
+                    <span class="begin-time">22:05</span>
+                    <br>
+                    <span class="end-time">00:20散场</span>
+                </td>
+                <td>
+                    <span class="lang">国语2D</span>
+                </td>
+                <td>
+                    <span class="hall">3号 60帧厅</span>
+                </td>
+                <td>
+                    <span class="sell-price"><span class="stonefont"></span></span>
+                </td>
+                <td>
+                    <a href="choose-seat.html?movieTime=22:05"><button>选座购票</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+   <script type="text/javascript">
+    window.onload = addurl();
+     function addurl() {
+          //从locaton中获取username
+          const str = window.location.href;
+          const search = "moviename";
+          const start = str.indexOf(search);
+          const result = '&'+str.substring(start, str.length);
+          //给每个更改url
+          var url = document.querySelectorAll("a");
+          console.log(url)
+          for (var i = 0; i < url.length; i++) {
+               console.log(url[i].href)
+               url[i].href += result;
+          }
+     }
+     </script>
+</body>
+
+</html>

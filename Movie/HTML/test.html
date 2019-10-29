@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <p><label class="label_input">用户名</label><input type="text" id="username" class="text_field" /></p>
+        <p><label class="label_input">密码</label><input type="text" id="password" class="text_field" /></p>
+
+        <input type="button" id="btn_login" value="重输" onclick="reset()">
+        <input type="button" id="btn_login" value="登陆" onclick="login()">
+
+
+        <script>
+
+
+        function login() {
+            var username = document.getElementById("username");
+            var pass = document.getElementById("password");        
+            if (username.value == "") {       
+                alert("请输入用户名");        
+            } else if (pass.value  == "") {        
+                alert("请输入密码");       
+            } else if(username.value == "ss" && pass.value == "ss"){        
+                window.location.href="welcome.html";        
+            } else {        
+                alert("请输入正确的用户名和密码！")       
+            }
+        }
+        
+            function reset(){
+            var name=document.getElementById("username");
+            var pass=document.getElementById("password");
+            name.value="";
+            pass.value="";
+        }
+            </script>
+</body>
+</html>

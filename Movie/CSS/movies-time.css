@@ -1,0 +1,35 @@
+.plist{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.upbox{
+    font-style: normal;
+    font-size: 30px;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+     background-color:rgba(128, 128, 128, 0.808);
+     
+}
+.even{
+    position: relative;
+    top: 20px;
+    padding: 30px;
+    border-color:transparent;
+    background-color:rgba(128, 128, 128, 0.425);
+    /* background-color:rgba(128, 128, 128, 0.425); */
+}
+.begin-time{
+    font-size: 18px;
+}
+.end-time{
+    font-size: 12px;
+}
+
+button{
+    color: red;
+    border-radius:20%;
+}

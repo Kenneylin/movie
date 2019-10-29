@@ -1,0 +1,389 @@
+<html>
+
+<head>
+    <title>座位预定</title>
+    <link href="../CSS/choosestyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div style="width:1000px;margin: 0 auto;">
+        <span id='screen'>
+            <p>
+                荧幕
+            </p>
+        </span>
+
+        
+        <div class="row-id-container">
+            <div class="row-id">0</div>   
+            <div class="row-id">1</div>    
+            <div class="row-id">2</div>    
+            <div class="row-id">3</div>    
+            <div class="row-id">4</div>    
+            <div class="row-id">5</div>    
+            <div class="row-id">6</div>    
+            <div class="row-id">7</div>      
+        </div>
+
+        <div id="seats">
+            <div class="seatsRaw" onclick="change()" data-y="0">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+        
+            </div>
+        
+            <div class="seatsRaw" onclick="change()" data-y="1">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+        
+            </div>
+        
+            <div class="seatsRaw" onclick="change()" data-y="2">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+        
+            <div class="seatsRaw" onclick="change()" data-y="3">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+        
+            <div class="seatsRaw" onclick="change()" data-y="4">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+        
+            <div class="seatsRaw" onclick="change()" data-y="5">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+            <div class="seatsRaw" onclick="change()" data-y="6">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+            <div class="seatsRaw" onclick="change()" data-y="7">
+                <div class="seat" data-x="0"></div>
+                <div class="seat" data-x="1"></div>
+                <div class="seat" data-x="2"></div>
+                <div class="seat" data-x="3"></div>
+                <div class="seat" data-x="4"></div>
+                <div class="seat" data-x="5"></div>
+                <div class="seat" data-x="6"></div>
+                <div class="seat" data-x="7"></div>
+                <div class="seat" data-x="8"></div>
+                <div class="seat" data-x="9"></div>
+                <div class="seat" data-x="10"></div>
+                <div class="seat" data-x="11"></div>
+                <div class="seat" data-x="12"></div>
+                <div class="seat" data-x="13"></div>
+                <div class="seat" data-x="14"></div>
+                <div class="seat" data-x="15"></div>
+                <div class="seat" data-x="16"></div>
+                <div class="seat" data-x="17"></div>
+                <div class="seat" data-x="18"></div>
+                <div class="seat" data-x="19"></div>
+            </div>
+        </div>
+       
+        <div id="booking_desc">
+            <div class="booking_left">
+                <p class="username">尊敬的: </p>
+                <p class="moviename">您观看的电影：</p>
+                <p class="movietime">观看时间是：</p>
+                <br>
+                <button id="confirm" type="button" onclick="confirm()">submit it!</button>
+                <button id="choose" onclick="once()" data-number=0>click it!</button>
+            </div>
+        
+            <div class="booking_right">
+                <p>票价: 10.00 元</p>
+                <p class="seatnums">座位数是：</p>
+                <p style="color: #FBBC53;font-weight: bold; font-size: larger;">座位： </p>
+                <div id="totalmoney">总价：</div>
+            </div>
+        </div>
+
+    </div>    
+    
+        <script type="text/javascript">
+           
+            function getarr() {
+                    const a = document.querySelectorAll(".seat");
+                    const list = [];
+                    for (var i = 0; i < a.length; i++) {
+                        if (a[i].dataset.falut == "1") {
+                            const x = a[i].getAttribute('data-x');
+                            const y = a[i].parentNode.getAttribute('data-y');
+                            list.push({
+                                x,
+                                y,
+                            });
+                        }
+                    }
+                    return list;
+            }
+
+            function getinformation() {
+                const str = window.location.href;
+                const search = "movieTime";
+                const start = str.indexOf(search);
+                const result =str.substring(start, str.length);
+                const myarr = result.split("&");       //得到数组
+                var a=document.querySelectorAll("p");
+                a[1].innerText+=myarr[2].split("=")[1];
+                a[2].innerText+=myarr[1].split("=")[1];
+                a[3].innerText+=myarr[0].split("=")[1];  
+                mylist=getarr();
+                var mystring="";
+                for(var i=0;i<mylist.length;i++){
+                    mystring+="第"+mylist[i].y+"排"+"第"+mylist[i].x+"座  ";
+                }
+                a[6].innerText+=mystring;
+            }
+            window.onload = myfuction();//当html加载完后，给每个div设置颜色的状态为0（未选蓝色，1红色已选）
+            function myfuction() {
+                    const items = init();    //之前选的座位map(Number)
+                    var a = document.getElementsByClassName("seat");
+
+
+
+                    for (var i = 0; i < a.length; i++) {    //每次给fault设置为0
+                        var b = a[i];
+                        // if (b.dataset.falut == '2') {
+                        //     continue;
+                        // }
+                        b.dataset.falut = "0";
+                    }
+
+                    for (var i = 0; i < items.length; i++) {
+                        const x = parseInt(items[i].x);
+                        const y = parseInt(items[i].y);
+                        a[y * 20 + x].style.backgroundColor = "red";
+                        a[y * 20 + x].dataset.falut = "2";
+                    }
+
+                }
+            var times = 0;
+            function change() {
+                var x = event.target;                    //x为鼠标点击的元素
+                var a = x.dataset.falut; //下一步就是通过元素的属性，就知道  
+                if (x.dataset.falut != "2") {//座位未选
+                    if (x.className == 'seat') {//点击的是座位
+                        if (a == "0") {                  //0表示为蓝色未选中
+                            x.style.backgroundColor = "red";
+                            x.dataset.falut = "1";
+                        }
+                        else {
+                            x.style.backgroundColor = "#D8D8D8";
+                            x.dataset.falut = "0";
+                        }
+                        times++;
+                    }
+                }
+            }
+
+                function once() {
+                    var a=document.querySelectorAll("button")[1];
+                    if (a.dataset.number == 0) {
+                        nums();
+                        a.dataset.number=1;
+                    }
+                    else
+                        return;
+                }
+            
+                function nums() {
+                        var nums = 0;
+                        var a = document.getElementsByClassName("seat");
+                        for (var i = 0; i < a.length; i++) {
+                            if (a[i].dataset.falut == "1") {
+                                //    id+=a[i].id;
+                                nums++;
+                            }
+                        }
+                        document.getElementById("totalmoney").innerHTML += parseInt(nums) * 10 + "元";//"   "+id
+                        document.querySelectorAll("p")[5].innerText += nums;
+                        getinformation();
+                    }
+            function confirm() {
+                    var a = document.querySelectorAll(".seat");
+                    const arr = [];
+                    for (var i = 0; i < a.length; i++) {
+                        //将这次选的falut改为2
+                        if (a[i].dataset.falut == "1") {
+                            a[i].dataset.falut = "2";
+                        }
+                        //一种是之前选的座位，另一种就是当前这次选的座位，（更新）存进arr数组中
+                        if (a[i].dataset.falut == "2") {
+                            const x = a[i].getAttribute('data-x');
+                            const y = a[i].parentNode.getAttribute('data-y');
+                            arr.push({
+                                x,
+                                y,
+                            });
+                        }
+
+                    }
+                    setLocalSeat(arr);
+                }
+            
+            
+            function getQueryString(name) {
+                var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if(r!=null)return  unescape(r[2]); return null;
+            }
+
+            // 初始化检查 本地数据库是否存在数据，
+            function init() {
+                const movieTime = getQueryString('movieTime');
+                const items = window.localStorage.getItem(movieTime);
+                // JSON.parse(items).map(item => {
+                //     const { x, y } = item;
+                //     console.log(item);
+                // });
+                return JSON.parse(items);//转换为字符串
+            }
+
+            // 存储到本地座位
+            function setLocalSeat(arr) {
+                console.log(arr);
+                const movieTime = getQueryString('movieTime');
+                window.localStorage.setItem(movieTime, JSON.stringify(arr));
+            }
+
+            function removeLocalSeatt(x, y) {
+
+            }
+
+        </script>
+
+</body>
+
+</html>
